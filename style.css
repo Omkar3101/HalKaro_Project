@@ -251,7 +251,7 @@ main {
         position: relative;
         right: auto;
         top: auto;
-        animation: none;
+        animation: flyMove 15s linear infinite;
         height: 50px;
     }
     
