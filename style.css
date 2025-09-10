@@ -1,0 +1,173 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(/Images/day.png);
+    background-position: center;
+}
+
+#fly-bird {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  animation: flyMove 15s linear infinite;
+}
+
+@keyframes flyMove {
+  0%   { right: 0; }
+  100% { right: 100%; }
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+img{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 2px solid black;
+    height: 72vh;
+    width: 50vh;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-container{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border: 2px solid black;
+        border: 2px solid black;
+        background: rgba(255,255,255,0.18);
+    height: 10vh;
+    width: 50vh;
+    border-radius: 10px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.buttons{
+    display: flex;
+    padding-top: 30px;
+    gap: 50px;
+}
+
+.numbers-container{
+    width: 35vh;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+
+.num-box{
+    display: flex;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.operators-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.op-box{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 2px solid black;
+        background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#clear{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 2px solid black;
+        background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#total{
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#back{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 2px solid black;
+        background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+#volume-control{
+    filter: invert();
+    justify-items: flex-end;
+}
