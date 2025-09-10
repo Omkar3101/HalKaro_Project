@@ -248,11 +248,7 @@ main {
     }
     
     #fly-bird {
-        position: relative;
-        right: auto;
-        top: auto;
-        animation: flyMove 15s linear infinite;
-        height: 50px;
+        display: none;
     }
     
     .container {
