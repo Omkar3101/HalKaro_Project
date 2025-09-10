@@ -123,12 +123,10 @@ mode?.addEventListener("click", () => {
       "https://www.pngmart.com/files/23/Sun-Logo-PNG-HD-Isolated.png"
     );
     mode.setAttribute("height", "50px");
-    if (themeAudio.paused) {
-      themeAudio.autoplay = false;
-    } else {
       themeAudio.src = "Audio/day_singing.wav";
-      themeAudio.autoplay = true;
-    }
+      if(!isMuted){
+        themeAudio.play();
+      }
     volumeControl.style.filter = "invert()";
     container.style.border = "2px solid black";
     displayContainer.style.border = "2px solid black";
@@ -149,11 +147,9 @@ mode?.addEventListener("click", () => {
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLnpADgm8d5lFNN_1dbC1n33oXbcH4G6q8dQ&s"
     );
     mode.setAttribute("height", "40px");
-    if (themeAudio.paused) {
-      themeAudio.autoplay = false;
-    } else {
-      themeAudio.src = "Audio/night_singing.wav";
-      themeAudio.autoplay = true;
+    themeAudio.src = "Audio/night_singing.wav";
+    if(!isMuted){
+      themeAudio.play();
     }
     volumeControl.style.filter = "none";
     container.style.border = "2px solid white";
