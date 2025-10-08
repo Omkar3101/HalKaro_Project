@@ -1,5 +1,4 @@
-# HalKaro_Project
-
+# HalKaro
 A simple, responsive calculator web app built using HTML, CSS, and JavaScript, designed for performing basic arithmetic operations with a modern interface.
 
 ## Features
